@@ -31,3 +31,7 @@ get_it: ^7.6.7
 
 permission_handler: ^11.3.1
 geolocator: ^11.0.0
+
+
+해당 프로젝트에서는 stless 등의 최적화 작업 및 화면에 대한 최적화 작업은 고려하지 않습니다.
+
