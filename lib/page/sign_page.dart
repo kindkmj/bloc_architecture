@@ -19,16 +19,46 @@ class _SignPageState extends State<SignPage> {
           const SizedBox(
             height: 120,
           ),
-          TextFormField(
-            controller: _idCtrl,
-            decoration: InputDecoration(hintText: '아이디'),
+          Row(
+            children: [
+              Text('아이디'),
+              const SizedBox(
+                width: 10,
+              ),
+              SizedBox(
+                height: 40,
+                width: 80,
+                child: EditableText(
+                  controller: _idCtrl,
+                  focusNode: FocusNode(),
+                  style: const TextStyle(),
+                  cursorColor: Colors.black,
+                  backgroundCursorColor: Colors.white,
+                ),
+              ),
+            ],
           ),
           const SizedBox(
             height: 30,
           ),
-          TextFormField(
-            controller: _passwordCtrl,
-            decoration: InputDecoration(hintText: '비밀번호'),
+          Row(
+            children: [
+              Text('비밀번호'),
+              const SizedBox(
+                width: 10,
+              ),
+              SizedBox(
+                height: 40,
+                width: 80,
+                child: EditableText(
+                  controller: _passwordCtrl,
+                  focusNode: FocusNode(),
+                  style: const TextStyle(),
+                  cursorColor: Colors.black,
+                  backgroundCursorColor: Colors.white,
+                ),
+              ),
+            ],
           ),
           const SizedBox(
             height: 50,
